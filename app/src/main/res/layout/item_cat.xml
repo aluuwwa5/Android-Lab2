@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:elevation="4dp"
+    app:cardCornerRadius="12dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="Persian Cat"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toStartOf="@id/catImage"
+            android:layout_toLeftOf="@id/catImage" />
+        <TextView
+            android:id="@+id/origin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Origin: Iran"
+            android:layout_below="@id/name"
+            android:layout_alignStart="@id/name"
+            android:layout_alignLeft="@id/name"
+            android:layout_toStartOf="@id/catImage"
+            android:layout_toLeftOf="@id/catImage" />
+
+        <TextView
+            android:id="@+id/length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Length: very"
+            android:layout_below="@id/origin"
+            android:layout_alignStart="@id/origin"
+            android:layout_alignLeft="@id/origin"
+            android:layout_toStartOf="@id/catImage"
+            android:layout_toLeftOf="@id/catImage" />
+
+        <TextView
+            android:id="@+id/healthRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Health Rate: 4"
+            android:layout_below="@id/length"
+            android:layout_alignStart="@id/origin"
+            android:layout_alignLeft="@id/origin"
+            android:layout_toStartOf="@id/catImage"
+            android:layout_toLeftOf="@id/catImage" />
+
+        <TextView
+            android:id="@+id/playfulnessRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Playfulness Rate: 5"
+            android:layout_below="@id/healthRate"
+            android:layout_alignStart="@id/healthRate"
+            android:layout_alignLeft="@id/healthRate"
+            android:layout_toStartOf="@id/catImage"
+            android:layout_toLeftOf="@id/catImage" />
+
+        <TextView
+            android:id="@+id/intelligenceRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Intelligence Rate: 4"
+            android:layout_below="@id/playfulnessRate"
+            android:layout_alignStart="@id/playfulnessRate"
+            android:layout_alignLeft="@id/playfulnessRate"
+            android:layout_toStartOf="@id/catImage"
+            android:layout_toLeftOf="@id/catImage" />
+
+        <TextView
+            android:id="@+id/familyFriendlyRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Family Friendly Rate: 4"
+            android:layout_below="@id/intelligenceRate"
+            android:layout_alignStart="@id/intelligenceRate"
+            android:layout_alignLeft="@id/intelligenceRate"
+            android:layout_toStartOf="@id/catImage"
+            android:layout_toLeftOf="@id/catImage" />
+
+        <!-- Cat Image -->
+        <ImageView
+            android:id="@+id/catImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
