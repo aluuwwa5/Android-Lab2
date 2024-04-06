@@ -4,7 +4,7 @@ data class Cat(
     val id: Int,
     val name: String,
     val origin: String,
-    @SerializedName("image_url")val imageUrl: String,
+    @SerializedName("image_link")val imageUrl: String,
     @SerializedName("general_health")val healthRate: Int,
     val length: String,
     @SerializedName("playfulness")val playfulnessRate: Int,
